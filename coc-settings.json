@@ -6,7 +6,7 @@
     "ccls": {
       "command": "ccls",
       "filetypes": [ "c", "cc", "cpp", "c++", "objc", "objcpp" ],
-      "rootPatterns": [ "compile_commands.json", ".git/", ".hg/", ".vscode", ".vim/" ],
+      "rootPatterns": [ "compile_commands.json", ".git/", ".hg/", ".vscode", ".vim/", "build", "build/" ],
       "initializationOptions": {
         "highlight": {"lsRanges": true},
         "cache": {
