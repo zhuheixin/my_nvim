@@ -1,5 +1,4 @@
 local opt = vim.opt
-
 -- 行号
 opt.relativenumber = true
 opt.number = true
@@ -35,3 +34,6 @@ opt.ignorecase = true
 opt.smartcase = true
 
 opt.termguicolors = flase
+
+-- 设置光标形状
+opt.guicursor = "n-v-c:block,i:block,r-cr:hor20"
