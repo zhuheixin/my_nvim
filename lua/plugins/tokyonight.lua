@@ -13,7 +13,7 @@ require("tokyonight").setup({
   },
   -- Change the "hint" color to the "orange" color, and make the "error" color bright red
   on_colors = function(colors)
-    colors.bg = "#171717"   
+    colors.bg = "#050505"   
     colors.fg = "#dadada"   
   end,
 
@@ -27,6 +27,8 @@ require("tokyonight").setup({
     highlights["@type.builtin"] = { fg = "#82f4a8", bg = "NONE" }  -- 绿色
     highlights.Type = { fg = "#82f4a8", bg = "NONE" }  -- 绿色
     highlights.Constant = { fg = "#FFB6C1", bg = "NONE" }  -- 设置常量为粉色
-    highlights.Visual = { fg = "#eaeaea",bg = "#A9A9A9"}
+    highlights.Visual = { fg = "#778899",bg = "#696969"}
+    highlights.Comment = { fg = "#898989", bg = "NONE" }  -- 设置常量为粉色
+    highlights["@comment"] = { fg = "#898989",bg = "NONE"}
   end
 })
