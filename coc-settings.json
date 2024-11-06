@@ -13,7 +13,7 @@
           "directory": "/tmp/ccls"
         },
         "clang": {
-      "extraArgs": [ "-std=c++11" ]
+      "extraArgs": ["-std=c++11"]
         },
         "completion": {
           "detailedLable": true,

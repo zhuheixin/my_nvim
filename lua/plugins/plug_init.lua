@@ -35,6 +35,7 @@ local plugins = {
   --  "neovim/nvim-lspconfig"
   --}
   
+   {"lewis6991/gitsigns.nvim"},
 }
 local opts = {} -- 注意要定义这个变量
 

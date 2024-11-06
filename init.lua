@@ -11,4 +11,4 @@ require("plugins/lualine")
 require("plugins/nvim-treesitter") 
 require("plugins/telescope") 
 require("plugins/cocnvim") 
-
+require("plugins/gitsigns")
