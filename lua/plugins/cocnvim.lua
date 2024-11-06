@@ -58,3 +58,7 @@ end
 
 -- 创建命令 Gcmake
 vim.api.nvim_create_user_command('Gcmake', generate_compile_commands, {})
+
+-- Formatting selected code
+keyset("x", "<leader>f", "<Plug>(coc-format-selected)", {silent = true})
+keyset("n", "<leader>f", "<Plug>(coc-format-selected)", {silent = true}) 
