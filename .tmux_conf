@@ -1,0 +1,77 @@
+# Use C-a
+unbind C-b
+set -g prefix C-a
+# invoke reattach-to-user-namespace every time a new window/pane opens
+# start selecting text typing 'v' key (once you are in copy mode)
+#bind-key -t vi-copy v begin-selection
+# copy selected text to the system's clipboard
+#bind-key -t vi-copy y copy-pipe
+
+# Use vim keybindings in copy mode
+setw -g mode-keys vi
+
+# 状态栏
+# 颜色
+set -g status-bg black
+set -g status-fg white
+
+# 对齐方式
+set-option -g status-justify centre
+
+# 左下角
+set-option -g status-left '#[bg=black,fg=green][#[fg=cyan]#S#[fg=green]]'
+set-option -g status-left-length 20
+
+# 窗口列表
+setw -g automatic-rename on
+set-window-option -g window-status-format '#[dim]#I:#[default]#W#[fg=grey,dim]'
+set-window-option -g window-status-current-format '#[fg=cyan,bold]#I#[fg=blue]:#[fg=cyan]#W#[fg=dim]'
+
+# 右下角
+set -g status-right '#[fg=green][#[fg=cyan]%Y-%m-%d#[fg=green]]'
+
+#------------------------------------------------------------------------------#
+#------------------------------------------------------------------------------#
+#  *** 基本终终端操作 ***
+#  tmux new -s "session_name"       // 创建一个seesion
+#  tmux new -s "session_name" -d    // 创建一个seesion, 并在后台运行
+#  tmux ls                          // 列出tmux会话列表
+#  tmux attach -t session           // 进入指定的会话（可终端共享）
+#  tmux kill-session -t "session"   // 删除指定会话
+#
+#  ** 容易混淆 **
+#  bind-key ;   // switch to last pane
+#  bind-key l   // switch to last window
+#  bind-key L   // switch to last session
+#  bind-key C-l // switch to last pane(like: bind-key ;)
+#  *** 控制台-操作说明 ***
+#  Ctrl+b  // 激活控制台
+#  ** 系统操作
+#      ?   // 列出所有快捷键；按q返回
+#      d   // 脱离当前会话；
+#      D   // 选择要脱离的会话；在同时开启了多个会话时使用
+#      Ctrl+z  // 挂起当前会话
+#      r   // 强制重绘未脱离的会话
+#      s   // 选择并切换会话；在同时开启了多个会话时使用
+#      :   // 进入命令行模式；
+#               :new-session         // 创建新会话
+#      [   // 进入复制模式；此时的操作与vi/emacs相同，按q/Esc退出
+#      ]   // 进入粘贴模式;
+#      ~   // 列出提示信息缓存；其中包含了之前tmux返回的各种提示信息
+#
+#  ** 会话操作
+#      (   preview session
+#      )   next session
+
+#  set -g status-fg white
+#  set -g status-bg black
+#  #设置窗口列表颜色
+#  setw -g window-status-fg cyan
+#  setw -g window-status-bg default
+#  setw -g window-status-attr dim
+#  #设置当前窗口在status bar中的颜色
+#  setw -g window-status-current-fg white
+#  setw -g window-status-current-bg red
+#  setw -g window-status-current-attr bright
+#  #设置status bar格式
+#  set -g status-left-length 40
