@@ -13,10 +13,17 @@ require('lualine').setup {
     lualine_c = {
       {
         'filename',
-        path = 1  -- 设置为 1 以显示绝对路径
+        path = 1,  -- 设置为 1 以显示绝对路径
+        color = { bg = "#303034" }
       }
     },
-    lualine_x = {'encoding', 'fileformat', 'filetype'},
+
+    lualine_x = {
+      { 'encoding', color = { bg = "#303034" } },
+      { 'fileformat', color = { bg = "#303034" } },
+      { 'filetype', color = { bg = "#303034" } },
+    },
+
     lualine_y = {'progress'},
     lualine_z = {'location'}
   },
