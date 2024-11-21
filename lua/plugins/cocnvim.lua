@@ -3,6 +3,7 @@ vim.g.coc_global_extensions = {
   'coc-json',
   'coc-vimlsp',
   'coc-cmake',
+  'coc-java',
   'coc-sh'
 }
 
