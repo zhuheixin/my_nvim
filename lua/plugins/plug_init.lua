@@ -28,14 +28,21 @@ local plugins = {
     'neoclide/coc.nvim',
     branch = 'release',
   },
-  --
-  --{
-  --  "williamboman/mason.nvim",
-  --  "williamboman/mason-lspconfig.nvim", -- 这个相当于mason.nvim和lspconfig的桥梁
-  --  "neovim/nvim-lspconfig"
-  --}
+ 
+  -- mason 插件
+  {
+    "williamboman/mason.nvim",
+    "williamboman/mason-lspconfig.nvim", -- 这个相当于mason.nvim和lspconfig的桥梁
+    "neovim/nvim-lspconfig"
+  },
   
-   {"lewis6991/gitsigns.nvim"},
+  {"lewis6991/gitsigns.nvim"},
+
+  -- 自动补全
+  "hrsh7th/nvim-cmp",
+  "hrsh7th/cmp-nvim-lsp",
+  "L3MON4D3/LuaSnip", -- snippets引擎，不装这个自动补全会出问题
+  "hrsh7th/cmp-path", -- 文件路径
 }
 local opts = {} -- 注意要定义这个变量
 
