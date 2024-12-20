@@ -14,3 +14,5 @@ require("plugins/gitsigns")
 require("plugins/lsp")
 --require("plugins/java")
 require("plugins/cmp")
+
+require("plugins/none-ls")

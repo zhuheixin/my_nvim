@@ -95,14 +95,9 @@ cmp.setup({
     }),
   }),
 
-  -- 这里重要
-  sources = cmp.config.sources({
-    { name = 'nvim_lsp' },
-   --j { name = 'luasnip' },
-    { name = 'path' },
-  } ) 
--- {
---    { name = 'buffer' },
---  }
-
+  sources = {
+        { name = 'buffer', keyword_length = 1, max_item_count = 10 },
+        { name = 'path', max_item_count = 5 },
+        { name = 'nvim_lsp', max_item_count = 10 },
+   },
 })

@@ -37,6 +37,8 @@ local plugins = {
   },
   
   {"lewis6991/gitsigns.nvim"},
+  -- 格式化插件
+  {"nvimtools/none-ls.nvim"},
 
   -- 自动补全
   "hrsh7th/nvim-cmp",
