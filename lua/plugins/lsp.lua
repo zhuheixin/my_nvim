@@ -53,7 +53,7 @@ vim.opt.signcolumn = "number" -- 或 'yes'
 vim.api.nvim_set_keymap("n", "ga", "<cmd>lua vim.lsp.buf.code_action()<CR>", options)
 vim.api.nvim_set_keymap("n", "gd", "<cmd>lua vim.lsp.buf.definition()<CR>", options)
 vim.api.nvim_set_keymap("n", "gt", "<cmd>lua vim.lsp.buf.type_definition()<CR>", options)
-vim.api.nvim_set_keymap("n", "gde", "<cmd>lua vim.lsp.buf.declaration()<CR>", options)
+vim.api.nvim_set_keymap("n", "ge", "<cmd>lua vim.lsp.buf.declaration()<CR>", options)
 vim.api.nvim_set_keymap("n", "gr", "<cmd>lua vim.lsp.buf.references()<CR>", options)
 vim.api.nvim_set_keymap("n", "gl", "<cmd>lua vim.lsp.buf.implementation()<CR>", options)
 
