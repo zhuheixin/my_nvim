@@ -37,3 +37,5 @@ opt.termguicolors = flase
 
 -- 设置光标形状
 opt.guicursor = "n-v-c:block,i:block,r-cr:hor20"
+
+opt.jumpoptions = "stack"
