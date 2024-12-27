@@ -39,7 +39,7 @@ cmp.setup({
     },
 
   completion = {
-    keyword_length = 1,  -- Set the minimum number of characters for triggering completion
+    keyword_length = 2,  -- Set the minimum number of characters for triggering completion
     max_item_count = 10,
     autocomplete = false,
   },
