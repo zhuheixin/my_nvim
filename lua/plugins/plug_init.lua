@@ -45,9 +45,10 @@ local plugins = {
   "hrsh7th/cmp-nvim-lsp",
   "L3MON4D3/LuaSnip", -- snippets引擎，不装这个自动补全会出问题
   "hrsh7th/cmp-path", -- 文件路径
-  -- "sakhnik/nvim-gdb"
   "hrsh7th/cmp-buffer",     -- 缓冲区补全
   "hrsh7th/cmp-cmdline",}    -- 命令行补全
+  -- gdb 
+  "sakhnik/nvim-gdb"
 }
 
 local opts = {} -- 注意要定义这个变量
