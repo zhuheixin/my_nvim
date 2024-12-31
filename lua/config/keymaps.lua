@@ -14,7 +14,7 @@ keymap.set("n", "<C-h>", ":bprevious<CR>")
 api.nvim_set_keymap('n', '<leader>nh', ':set nohlsearch<CR>', { noremap = true, silent = true })
 
 -- 映射 H 到行首
-api.nvim_set_keymap('n', 'H', '0', { noremap = true, silent = true })
+api.nvim_set_keymap('n', 'H', '^', { noremap = true, silent = true })
 
 -- 映射 L 到行尾
 api.nvim_set_keymap('n', 'L', '$', { noremap = true, silent = true })

@@ -12,7 +12,7 @@ require("mason-lspconfig").setup({
 	-- 确保安装，根据需要填写
 	ensure_installed = {
 		"clangd",
-		"pyright",
+        "pyright"
 	},
 })
 
@@ -47,8 +47,6 @@ local function generate_compile_commands()
 end
 
 local options = { noremap = true, silent = true }
--- 错误提示显示在行号上
-vim.opt.signcolumn = "number" -- 或 'yes'
 -- LSP config mappings
 vim.api.nvim_set_keymap("n", "ga", "<cmd>lua vim.lsp.buf.code_action()<CR>", options)
 vim.api.nvim_set_keymap("n", "gd", "<cmd>lua vim.lsp.buf.definition()<CR>", options)

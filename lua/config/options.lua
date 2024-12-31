@@ -39,3 +39,6 @@ opt.termguicolors = flase
 opt.guicursor = "n-v-c:block,i:block,r-cr:hor20"
 
 opt.jumpoptions = "stack"
+
+-- 错误提示显示在行号上
+vim.opt.signcolumn =  "number"  --"number" -- 或 'yes'

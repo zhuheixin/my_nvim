@@ -18,8 +18,8 @@ require("tokyonight").setup({
   end,
 
   on_highlights = function(highlights, colors)
-    highlights.Search = { bg = "#f9d28b", fg = "#FFFFFF" }  -- 设置 Search 的背景和前景色
-    highlights.IncSearch = { bg = "#fef895", fg = "#FFFFFF" }  -- 设置 IncSearch 的背景和前景色
+    highlights.Search = { bg = "#414141", fg = "#FFFFFF" }  -- 设置 Search 的背景和前景色
+    highlights.IncSearch = { bg = "#bdbdbd", fg = "#FFFFFF" }  -- 设置 IncSearch 的背景和前景色
     highlights.String = { fg = "#c79ae5", bg = "NONE" }  -- 设置字符串的颜色
     highlights.Keyword = { fg = "#eee5b2", bg = "NONE"}
     highlights["@keyword"] = { fg = "#eee5b2", bg = "NONE"}

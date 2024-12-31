@@ -1,9 +1,3 @@
-local has_words_before = function()
-  unpack = unpack or table.unpack
-  local line, col = unpack(vim.api.nvim_win_get_cursor(0))
-  return col ~= 0 and vim.api.nvim_buf_get_lines(0, line - 1, line, true)[1]:sub(col, col):match("%s") == nil
-end
-
 
 local cmp_status_ok, cmp = pcall(require, "cmp")
 if not cmp_status_ok then
@@ -23,13 +17,14 @@ local check_backspace = function()
   return col == 0 or vim.fn.getline("."):sub(col, col):match "%s"
 end
 
+
 cmp.setup({
   snippet = {
     expand = function(args)
       require('luasnip').lsp_expand(args.body)
     end,
   },
-  -- 禁用 tree-sitter 更新
+
   experimental = {
     native_menu = false,   -- 使用原生菜单而非 tree-sitter 解析
   },
@@ -39,47 +34,31 @@ cmp.setup({
     },
 
   completion = {
-    keyword_length = 2,  -- Set the minimum number of characters for triggering completion
+    keyword_length = 1,  -- Set the minimum number of characters for triggering completion
     max_item_count = 10,
-    autocomplete = false,
   },
-
   mapping = cmp.mapping.preset.insert({
     ['<C-b>'] = cmp.mapping.scroll_docs(-4),
     ['<C-f>'] = cmp.mapping.scroll_docs(4),
     ['<C-e>'] = cmp.mapping.abort(),  -- 取消补全，esc也可以退出
     ['<CR>'] = cmp.mapping.confirm({ select = true }),
 
-        -- 用 Tab 触发补全菜单
     ["<Tab>"] = cmp.mapping(function(fallback)
       if cmp.visible() then
-        cmp.select_next_item()  -- 补全菜单中选择下一个补全项
-      elseif has_words_before() then
-        cmp.complete()
         cmp.select_next_item()
+      elseif luasnip.expandable() then
+        luasnip.expand()
+      elseif luasnip.expand_or_jumpable() then
+        luasnip.expand_or_jump()
+      elseif check_backspace() then
+        fallback()
       else
-        fallback()  -- 显示补全菜单
+        fallback()
       end
-    end, { "i", "s" }),
-
-   -- ["<Tab>"] = cmp.mapping(function(fallback)
-   --   if cmp.visible() then
-   --     cmp.select_next_item()
-   --   elseif luasnip.expandable() then
-   --     luasnip.expand()
-   --   elseif luasnip.expand_or_jumpable() then
-   --     luasnip.expand_or_jump()
-   --   elseif has_words_before() then
-   --     cmp.complete()
-   --   elseif check_backspace() then
-   --     fallback()
-   --   else
-   --     fallback()
-   --   end
-   -- end, {
-   --   "i",
-   --   "s",
-   -- }),
+    end, {
+      "i",
+      "s",
+    }),
 
     ["<S-Tab>"] = cmp.mapping(function(fallback)
       if cmp.visible() then
@@ -95,9 +74,12 @@ cmp.setup({
     }),
   }),
 
+  -- 这里重要
   sources = {
-        { name = 'buffer', keyword_length = 1, max_item_count = 10 },
-        { name = 'path', max_item_count = 5 },
-        { name = 'nvim_lsp', max_item_count = 10 },
-   },
+    { name = 'buffer', max_item_count = 10},
+    { name = 'path', max_item_count = 10},
+    { name = 'nvim_lsp', max_item_count = 10 },
+   -- { name = 'luasnip',max_item_count = 10 },
+  },
+
 })
