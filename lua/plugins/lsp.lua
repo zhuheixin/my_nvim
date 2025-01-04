@@ -26,7 +26,23 @@ require("lspconfig").clangd.setup({
 	filetypes = { "c", "cc", "cpp", "objc", "objcpp", "cuda", "proto" },
 })
 
-require("lspconfig").pyright.setup({})
+require("lspconfig").pyright.setup({
+    settings = {
+        python = {
+            analysis = {
+                autoImportCompletions = false,            -- 自动补全导入
+                autoSearchPaths = true,                 -- 自动搜索路径
+                diagnosticMode = "openFilesOnly",           -- 诊断模式，"openFilesOnly" 或 "workspace"
+                typeCheckingMode = "basic",            -- 类型检查模式，可选 "off", "basic", "strict"
+                useLibraryCodeForTypes = true,          -- 使用库的类型信息
+                logLevel = "Information",               -- 日志级别
+                stubPath = "typings",                   -- 自定义类型存根路径
+                extraPaths = { "./src" },               -- 自定义模块搜索路径
+            }
+        }
+    }
+
+})
 
 -- 定义生成编译命令的函数
 local function generate_compile_commands()
@@ -64,7 +80,7 @@ vim.api.nvim_set_keymap("n", "<leader>f=", "<cmd>lua vim.lsp.buf.format { async 
 -- 禁用显示错误和警告
 vim.diagnostic.config({
 	virtual_text = false, -- 禁用显示行内错误和警告
-	signs = true, -- 禁用行号旁边的标志（如红色错误标记）
+	signs = false, -- 禁用行号旁边的标志（如红色错误标记）
 	underline = true, -- 禁用下划线错误
 	update_in_insert = false, -- 在插入模式下不更新诊断
 	severity_sort = false, -- 不按照严重性排序诊断信息
