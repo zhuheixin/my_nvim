@@ -35,14 +35,28 @@ require("lspconfig").pyright.setup({
                 diagnosticMode = "openFilesOnly",           -- 诊断模式，"openFilesOnly" 或 "workspace"
                 typeCheckingMode = "basic",            -- 类型检查模式，可选 "off", "basic", "strict"
                 useLibraryCodeForTypes = true,          -- 使用库的类型信息
-                logLevel = "Information",               -- 日志级别
-                stubPath = "typings",                   -- 自定义类型存根路径
-                extraPaths = { "./src" },               -- 自定义模块搜索路径
+                extraPaths = {"/home/ttt/.local/share/ov/pkg/IsaacLab/source/extensions/omni.isaac.lab/",
+                              "/home/ttt/.local/share/ov/pkg/IsaacLab/source/extensions/omni.isaac.lab_assets/",
+                              "/home/ttt/.local/share/ov/pkg/IsaacLab/source/extensions/omni.isaac.lab_tasks/",
+                              "/home/ttt/.local/share/ov/pkg/IsaacLab/_isaac_sim/exts/omni.isaac.core/omni/isaac/core/",
+                },
             }
         }
-    }
-
+    },
+    on_init = function(client)
+        -- 自动检测 Conda 环境
+        local conda_env = os.getenv("CONDA_PREFIX") -- 获取当前 Conda 环境路径
+        if conda_env then
+            client.config.settings.python.pythonPath = conda_env .. "/bin/python"
+        else
+            client.config.settings.python.pythonPath = "/usr/bin/python3" -- 默认 Python 解释器
+        end
+        client.notify("workspace/didChangeConfiguration")
+        return true
+    end,
 })
+
+-- require("lspconfig").basedpyright.setup({})
 
 -- 定义生成编译命令的函数
 local function generate_compile_commands()

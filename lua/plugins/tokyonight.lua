@@ -13,7 +13,7 @@ require("tokyonight").setup({
   },
   -- Change the "hint" color to the "orange" color, and make the "error" color bright red
   on_colors = function(colors)
-    colors.bg = "#050505"   
+    colors.bg = "#000000"   
     colors.fg = "#dadada"   
   end,
 

@@ -1,6 +1,6 @@
 local opt = vim.opt
 -- 行号
-opt.relativenumber = true
+opt.relativenumber = false
 opt.number = true
 
 -- 缩进
@@ -42,3 +42,6 @@ opt.jumpoptions = "stack"
 
 -- 错误提示显示在行号上
 vim.opt.signcolumn =  "number"  --"number" -- 或 'yes'
+
+opt.directory = '.'
+
