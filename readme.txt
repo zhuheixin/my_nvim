@@ -20,3 +20,6 @@ node -v
 pip install 'python-lsp-server[yapf,flake8]'
 yapf -i file
 ::CocInstall @yaegassy/coc-pylsp
+
+# 安装复制连接器
+# sudo apt install xclip xsel

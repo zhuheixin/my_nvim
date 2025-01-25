@@ -23,7 +23,7 @@ opt.mouse = ""
 
 
 -- 系统剪贴板
-opt.clipboard:append("unnamedplus")
+--opt.clipboard:append("unnamedplus")
 
 -- 默认新窗口右和下
 opt.splitright = true
