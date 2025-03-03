@@ -39,6 +39,11 @@ require("lspconfig").pyright.setup({
                               "/home/ttt/.local/share/ov/pkg/IsaacLab/source/extensions/omni.isaac.lab_assets/",
                               "/home/ttt/.local/share/ov/pkg/IsaacLab/source/extensions/omni.isaac.lab_tasks/",
                               "/home/ttt/.local/share/ov/pkg/IsaacLab/_isaac_sim/exts/omni.isaac.core/omni/isaac/core/",
+                              "/opt/docker/isaacsim_4_5_0/isaaclab/source/isaaclab/",
+                              "/opt/docker/isaacsim_4_5_0/isaaclab/source/isaaclab_rl/",
+                              "/opt/docker/isaacsim_4_5_0/isaaclab/source/isaaclab_tasks/",
+                              "/opt/docker/isaacsim_4_5_0/isaaclab/source/isaaclab_mimic/",
+                              "/opt/docker/isaacsim_4_5_0/isaaclab/source/isaaclab_assets/",
                 },
             }
         }

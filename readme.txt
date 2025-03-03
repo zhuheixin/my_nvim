@@ -23,3 +23,6 @@ yapf -i file
 
 # 安装复制连接器
 # sudo apt install xclip xsel
+
+# 安装luarocks
+sudo apt install luarocks
