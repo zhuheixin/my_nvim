@@ -30,6 +30,7 @@ require("lspconfig").pyright.setup({
     settings = {
         python = {
             analysis = {
+                typeCheckingMode = "off", -- 关闭类型检查
                 autoImportCompletions = false,            -- 自动补全导入
                 autoSearchPaths = true,                 -- 自动搜索路径
                 diagnosticMode = "openFilesOnly",           -- 诊断模式，"openFilesOnly" 或 "workspace"

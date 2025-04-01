@@ -4,8 +4,11 @@ require("config.options")
 require("config.keymaps")
 
 -- 一些插件 
-require("plugins/tokyonight") 
-vim.cmd([[colorscheme tokyonight-night]])
+-- require("plugins/tokyonight") 
+-- vim.cmd([[colorscheme tokyonight-night]])
+
+-- 使用gruvbox主题
+require("plugins/gruvbox") 
 
 require("plugins/lualine") 
 require("plugins/nvim-treesitter") 

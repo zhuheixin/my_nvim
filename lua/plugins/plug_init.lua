@@ -63,6 +63,9 @@ local plugins = {
     { "<c-s>", mode = { "c" }, function() require("flash").toggle() end, desc = "Toggle Flash Search" },
   },
 },
+  -- 文档树
+  "nvim-tree/nvim-tree.lua",  -- 文档树
+  "nvim-tree/nvim-web-devicons", -- 文档树图标 
 
     -- copilot
     --{
@@ -77,6 +80,7 @@ local plugins = {
     --    },
     --    -- See Commands section for default commands if you want to lazy load on them
     --},
+  { "ellisonleao/gruvbox.nvim", priority = 1000 , config = true},
 }
 
 local opts = {} -- 注意要定义这个变量
