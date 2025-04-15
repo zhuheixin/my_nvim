@@ -24,10 +24,10 @@ local plugins = {
      'nvim-telescope/telescope.nvim', tag = '0.1.8',
       dependencies = { 'nvim-lua/plenary.nvim' }
   },
-  {
-    'neoclide/coc.nvim',
-    branch = 'release',
-  },
+  --{
+  --  'neoclide/coc.nvim',
+  --  branch = 'release',
+  --},
  
   -- mason 插件
   {
