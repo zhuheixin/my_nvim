@@ -9,3 +9,24 @@
 # %cpp -std=c++17 -Iinclude
 # %h -x c++-header
 # %c -std=c11
+
+
+# C++ 文件配置
+%cpp -std=c++17
+-DSELENE_WITH_LIBJPEG
+-DSELENE_WITH_LIBPNG
+-DSELENE_WITH_LIBTIFF
+-DSELENE_WITH_OPENCV
+-I.
+-Ibuild
+-Itest
+-Wall
+-Wextra
+-Wpedantic
+-Wconversion
+
+# C 文件配置（如果需要）
+%c -std=c11
+
+# 头文件按 C++ 模式解析
+%h -x c++-header
