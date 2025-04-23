@@ -1,4 +1,4 @@
-
+// colcon build --cmake-args -DCMAKE_EXPORT_COMPILE_COMMANDS=ON -DPYTHON_EXECUTABLE=/usr/bin/python3 
 {   
     "coc.preferences.colorSupport": true,
     "suggest.triggerAfterInsertEnter": true,
