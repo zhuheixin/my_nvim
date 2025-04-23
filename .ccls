@@ -1,0 +1,11 @@
+# %build/compile_commands.json
+-std=c++14
+-Iinclude
+-Isrc
+-I/usr/local/include
+-I/usr/include.cc
+
+
+# %cpp -std=c++17 -Iinclude
+# %h -x c++-header
+# %c -std=c11
