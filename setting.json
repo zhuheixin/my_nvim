@@ -1,0 +1,328 @@
+{
+    "editor.bracketPairColorization.enabled": true,
+    "editor.guides.bracketPairs":"active",
+    "editor.fontSize": 17.3,
+    "editor.lineHeight": 28,
+    "workbench.editor.enablePreview": false,  // 允许叠加窗口
+    "editor.fontFamily": "JetBrains Mono, Fira Code",
+    "editor.copyWithSyntaxHighlighting": true,
+    "[jsonc]": {
+
+        "editor.quickSuggestions": {
+            "strings": true
+        },
+        "editor.suggest.insertMode": "replace",
+    },
+    "remote.SSH.remotePlatform": {
+      "办公室76": "linux",
+      "服务器252": "linux",
+      "服务器138": "linux",
+      "笔记本": "linux",
+      "47.106.153.81": "linux"
+    },
+    "workbench.startupEditor": "newUntitledFile",
+    "files.associations": {
+      "*.cu": "cpp",
+      "*.cpp": "cpp",
+      "*.json": "cpp"
+    },
+    "files.autoSave": "onFocusChange",
+    "debug.onTaskErrors": "debugAnyway",
+    "[c]": {
+        "editor.wordBasedSuggestions": "off",
+        "editor.suggest.insertMode": "replace",
+        "editor.semanticHighlighting.enabled": true
+    },
+    "workbench.colorCustomizations": 
+    {
+        // //1 悬浮控件背景=============================================
+        // "menu.background":"#262626", // 下拉框或者按钮悬浮栏背景颜色
+        // "menu.foreground":"#ffffffce",  // 下拉框或者按钮悬浮栏文字颜色
+        // "editorHoverWidget.background": "#262626", //鼠标提示悬浮窗口背景颜色
+        // "editorSuggestWidget.background": "#262626",
+        // "editorHoverWidget.foreground": "#ffffffce",  //鼠标提示悬浮窗口文字颜色
+        // // "editorHoverWidget.border": "#009e0d"  //鼠标提示悬浮窗口边框颜色
+        // // "list.highlightForeground": "#e254c3", // 匹配字体颜色  ---编辑区，输入提示
+
+
+        // //配置弹出的下拉菜单 和 左侧资源管理器栏里菜单================================
+        // "list.activeSelectionBackground":"#8dc5ab83",  // 左侧资源管理器栏里激活颜色
+        // // "list.activeSelectionForeground": "#ffffff",  // 左侧资源管理器栏里选中文字颜色
+        // "list.inactiveSelectionBackground": "#71928269", //未激活菜单背景
+        // "list.errorForeground": "#fc4949",  // 出现错误时文件或文件夹的提示颜色
+        // "list.hoverBackground": "#8dc5ab42",  //鼠标移动背景色  ----面包屑栏下拉菜单
+        // "focusBorder": "#8dc5ab83", // 鼠标点击后的边框颜色
+        
+
+        // // 菜单栏（以及标签） ===================================================
+        // "titleBar.activeForeground": "#fbf8fd",//最顶菜单文字背景
+        // "titleBar.activeBackground": "#464646",  //最顶菜单背景
+        // "titleBar.inactiveBackground": "#464646",  
+
+
+        // // 二级标签 =============================================================
+        // // "tab.hoverBorder": "#009e0d",
+        // "tab.hoverForeground": "#f7f5f5",  // 鼠标移动二级标签栏文字颜色
+        // "tab.hoverBackground": "#831a2862",    // 鼠标移动二级标签栏背景颜色
+        // "tab.inactiveBackground":"#212521",  // 非活动二级标签栏背景颜色
+        // "tab.activeBackground":"#ff1b3962",    //激活级标签栏背景颜色
+        // "tab.activeForeground": "#ffffff",    //激活的 字体 前景色
+        // // "tab.border": "#8dc5ab",  // 标签两边竖线---------
+
+
+        // // 三级标签  =============================================================
+        // "breadcrumb.foreground":"#f7f5f5a9",      //三级标签文字颜色
+        // "breadcrumb.background":"#3C3F41",      //三级标签背景颜色
+        // "breadcrumbPicker.background":"#262626",  // 三级标签下拉背景颜色
+        // "editorGroupHeader.border": "#000000",            //三级标签栏和编辑区分割线  分割线-------
+
+
+        // 代码编辑区 =============================================================
+        // "editor.foreground":"#000000",  //前景色
+        "editor.background":"#000000",  //背景色
+        // "editor.lineHighlightBackground": "#3c3c3c",          //高亮行
+        "editor.selectionBackground": "#858488",              //选中词颜色  
+        // "editor.selectionHighlightBackground": "#424344",    //相同匹配词的颜色
+        // "editor.selectionHighlightBorder": "#49494d",    // 相同匹配词边界颜色
+        // "editorCursor.foreground": "#ffffffd0",      //光标颜色
+        // "editorLineNumber.foreground": "#a19a9cb4",  //行号颜色
+        // "editorLineNumber.activeForeground": "#ebdbdbc2", //活动行号突出显示
+        // "editor.foldBackground": "#e254c333",    //代码折叠后的背景
+        // "diffEditor.border": "#009e0d",  // 多个编辑器的分割线 ----------
+
+
+    //     // 最左侧活动栏颜色 ======================================================
+    //     "activityBar.background": "#3C3F41",  //最左活动栏
+    //     "activityBar.foreground": "#15a325",  //最左活动栏图标颜色
+    //     "activityBarBadge.background":"#e254c3",  //最左活动栏 通知标记 颜色
+    //     "activityBar.inactiveForeground": "#4dd49542", //最左活动栏失活颜色
+    //     "activityBar.border": "#181818" , // 最左侧活动栏分割线颜色
+
+
+    //     // 左侧项目栏颜色 ======================================================
+    //     "sideBar.background": "#3C3F41",      //左侧项目栏颜色 展开背景颜色
+    //     //"sideBar.foreground": "#000000",      // 左侧项目栏字体颜色
+    //     "sideBar.border": "#000000",          //左侧项目栏与编辑区分割线颜色
+    //     "sideBarTitle.foreground": "#ffffff",  //左侧项目栏标题颜色
+    //     "badge.background": "#e254c3",  //标记未保存文件
+    //     "badge.foreground":"#f11717",
+    //     "sideBarSectionHeader.background": "#3C3F41",  // 左侧项目栏收起颜色
+    //     "sideBarSectionHeader.border": "#181818", // 左侧项目栏边分界线颜色
+
+    //     //右面缩略图 ==========================================================
+    //     "minimap.background": "#3C3F41",  //缩略图背景
+    //     "minimapSlider.activeBackground": "#8dc5ab83",  //点击激活滑块颜色
+    //     "minimapSlider.hoverBackground": "#8dc5ab83",
+    //     "minimapSlider.background": "#8dc5ab83",
+    //     "minimap.selectionHighlight": "#14ac28",    //当前行标记
+    //     "minimap.errorHighlight": "#ff0000",
+
+        
+    //     //9 最底部栏  状态栏=======================================
+    //     "statusBar.noFolderBackground" : "#3C3F41",  //单文件状态栏
+    //     "statusBar.background": "#3C3F41",  //最底状态栏颜色
+    //     "statusBar.foreground": "#f7fbfd",  //最底状态栏前景颜色
+    //     "statusBar.border": "#000000",  //底部状态栏分割线--------
+    //     "statusBar.noFolderBorder": "#ff0000",
+    //     "panel.background": "#3C3F41",    //最底部控制台
+    //     "panel.border": "#000000",  //控制台边框
+    //     "panelTitle.activeBorder": "#e254c3", //标题下划线颜色
+    //     "panelTitle.activeForeground": "#fadede",  // 控制台标题选中颜色
+    //     "panelTitle.inactiveForeground": "#928989",  // 控制台标题未选中颜色
+    //     "scrollbarSlider.activeBackground": "#07a07f",
+    //     "scrollbarSlider.background": "#25725f",
+        
+    // },
+
+    // "editor.tokenColorCustomizations": 
+    // {
+    //   "[Atom One Dark]": 
+    //     { 
+    //         "comments": "#8c867d", // 注释，
+    //   },
+    //   // 注释斜体取消
+    //   "textMateRules": 
+    //   [
+    //     {
+    //       "name": "Comment",
+    //       "scope": [
+    //         "comment",
+    //         "comment.block",
+    //         "comment.block.documentation",
+    //         "comment.line",
+    //         "comment.line.double-slash",
+    //         "punctuation.definition.comment",
+    //       ],
+    //       "settings": 
+    //       {
+    //         "fontStyle": "",
+    //         //斜体 "fontStyle": "italic",
+    //         //斜体下划线 "fontStyle": "italic underline",
+    //         //斜体粗体下划线 "fontStyle": "italic bold underline",
+    //       }
+    //     },
+    //     // ********** 操作符号 *************
+    //     {
+    //       "name": "Operator",
+    //       "scope": ["keyword.operator"],
+    //       "settings": 
+    //       {
+    //          "foreground": "#aaaaaa",
+    //       }
+    //     },
+    //     // ********** 函数调用 *************
+    //     {
+    //       "name": "function",
+    //       "scope": ["meta.function-call.generic"],
+    //       "settings": 
+    //       {
+    //          "foreground": "#30aa4f",
+    //       }
+    //     },
+    //     // ********** 函数和类的声明 *************
+    //     {
+    //       "name": "define function",
+    //       "scope": ["entity.name.function", "entity.name.type.class"],
+    //       "settings": 
+    //       {
+    //          "foreground": "#E5C07B",
+    //       }
+    //     },
+    //     // ********** 关键字 *************
+    //     {
+    //       "name": "keyword",
+    //       "scope": ["keyword", "keyword.control"],
+    //       "settings": 
+    //       {
+    //          "foreground": "#C678DD",
+    //       }
+    //     },
+    //             // ********** 字符串 *************
+    //     {
+    //       "name": "String",
+    //       "scope": ["string.regexp.quoted.single.python", "string"],
+    //       "settings": 
+    //       {
+    //          "foreground": "#90a838",
+    //       }
+    //     },
+    //                     // ********** CPP 结构体关键字 *************
+    //     {
+    //       "name": "function",
+    //       "scope": ["entity.name.function", "entity.name.function.preprocessor"],
+    //       "settings": 
+    //       {
+    //          "foreground": "#30aa4f",
+    //       }
+    //     },
+    //     // ********** 宏定义 ***********
+    //     {
+    //       "name": "Define",
+    //       "scope": ["entity.name.function.preprocessor"],
+    //       "settings": 
+    //       {
+    //          "foreground": "#E06C75",
+    //       }
+    //     },
+
+    //     // ****** 重载操作符 **********
+    //     {
+    //       "name": "operator_member",
+    //       "scope": ["entity.name.function.operator.member", "entity.name.function.operator"],
+    //       "settings": 
+    //       {
+    //          "foreground": "#C678DD",
+    //       }
+    //     },
+
+    //   ]
+    // },
+
+    // // "editor.semanticTokenColorCustomizations": 
+    // // {
+    // //     "enabled": false, // enable for all themes
+    // //     "rules": {
+    // //         "magicFunction:python": "#ee0000",
+    // //         "function.declaration:python": "#990000",
+    // //         "*.decorator:python": "#0000dd",
+    // //         "*.typeHint:python": "#5500aa",
+    // //         "*.typeHintComment:python": "#aaaaaa"
+    // //     }
+    // // },
+
+    // "sync.gist": "af0f5b735c780503ed29b99b850567bf",
+    // "oneDarkPro.bold": false,
+    // "workbench.editorAssociations": {
+    //   "*.ipynb": "jupyter-notebook"
+    // },
+    // "[cpp]": {
+  
+    //   "editor.wordBasedSuggestions": "off",
+    //   "editor.suggest.insertMode": "replace",
+    //   "editor.semanticHighlighting.enabled": true,
+    //   "editor.defaultFormatter": "ms-vscode.cpptools"
+    // },
+    // "explorer.confirmDelete": false,
+    // "[python]": {
+    // "breadcrumbs.showArrays": true,
+    // "editor.wordBasedSuggestions": "off",
+    // "breadcrumbs.showClasses": true,
+    // "breadcrumbs.showBooleans": true,
+    // "breadcrumbs.showConstructors": true,
+    // "editor.defaultFormatter": "ms-python.python"
+    // },
+    // "settingsSync.ignoredExtensions": [
+    //   "shd101wyy.markdown-preview-enhanced"  
+    // ],
+    // "python.linting.flake8Enabled": true,
+    // "python.linting.flake8Args": ["--max-line-length=248", "--ignore=E402, F405, F401, W291"], 
+    // "python.languageServer": "Pylance",
+    // // "python.analysis.typeCheckingMode": "basic",
+    // //"terminal.integrated.inheritEnv": false,
+    // "workbench.colorTheme": "Tokyo Night Storm",
+    // "editor.codeActionsOnSave": null,
+    // "editor.formatOnSaveMode": "modifications", // 不启用自带的环境
+    // "code-runner.runInTerminal": true,
+    // "code-runner.saveFileBeforeRun": true,
+    // "markdown-preview-enhanced.previewTheme": "one-dark.css",
+    // "notebook.cellToolbarLocation": {
+    //   "default": "right",
+    //   "jupyter-notebook": "left"
+    // },
+    // "workbench.iconTheme": "vscode-icons",
+    // "[markdown]": {
+
+    //   "editor.wordWrap": "on",
+    //   "editor.quickSuggestions": {
+    //     "comments": "off",
+    //     "strings": "off",
+    //     "other": "off"
+    //   }
+    // },
+    // "python.formatting.provider": "yapf",
+    // "python.formatting.yapfArgs": ["--style", "{column_limit: 120}"],
+    // "terminal.integrated.defaultProfile.windows": "PowerShell",
+    // "security.workspace.trust.untrustedFiles": "open",
+    // "terminal.external.windowsExec": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+    // //"hediet.vscode-drawio.local-storage": "eyIuZHJhd2lvLWNvbmZpZyI6IntcImxhbmd1YWdlXCI6XCJcIixcImN1c3RvbUZvbnRzXCI6W10sXCJsaWJyYXJpZXNcIjpcImdlbmVyYWxcIixcImN1c3RvbUxpYnJhcmllc1wiOltcIkwuc2NyYXRjaHBhZFwiXSxcInBsdWdpbnNcIjpbXSxcInJlY2VudENvbG9yc1wiOltcIkUzRTNFM1wiLFwiMDgwODA4XCIsXCIwMDAwMDBcIixcIkZGRkZGRlwiLFwiMEYwRjBGXCJdLFwiZm9ybWF0V2lkdGhcIjoyNDAsXCJjcmVhdGVUYXJnZXRcIjpmYWxzZSxcInBhZ2VGb3JtYXRcIjp7XCJ4XCI6MCxcInlcIjowLFwid2lkdGhcIjo4MjcsXCJoZWlnaHRcIjoxMTY5fSxcInNlYXJjaFwiOnRydWUsXCJzaG93U3RhcnRTY3JlZW5cIjp0cnVlLFwiZ3JpZENvbG9yXCI6XCIjZDBkMGQwXCIsXCJkYXJrR3JpZENvbG9yXCI6XCIjRDREMEMwXCIsXCJhdXRvc2F2ZVwiOnRydWUsXCJyZXNpemVJbWFnZXNcIjpudWxsLFwib3BlbkNvdW50ZXJcIjowLFwidmVyc2lvblwiOjE4LFwidW5pdFwiOjEsXCJpc1J1bGVyT25cIjpmYWxzZSxcInVpXCI6XCJcIn0ifQ==",
+    // "C_Cpp.clang_format_sortIncludes": true,
+    // "explorer.confirmDragAndDrop": false,
+    // //"bracket-pair-colorizer-2.depreciation-notice": false,
+    // "editor.unicodeHighlight.allowedCharacters": {
+    //   "；": true
+    // },
+    // "KeilAssistant.C51.Uv4Path": "F:\\keil5\\UV4\\UV4.exe",
+    // "KeilAssistant.MDK.Uv4Path": "F:\\keil5\\UV4\\UV4.exe",
+    // "[c][cpp][python]": {
+    //   "editor.wordBasedSuggestions": "off"
+    // },
+    },
+    "workbench.colorTheme": "Tokyo Night",
+    "[cpp]": {
+        "editor.wordBasedSuggestions": "off",
+        "editor.semanticHighlighting.enabled": true,
+        "editor.stickyScroll.defaultModel": "foldingProviderModel",
+        "editor.suggest.insertMode": "replace"
+    },
+    "zenMode.showTabs": "none",
+}
