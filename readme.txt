@@ -1,4 +1,12 @@
 
+1. 安装 Vim-Plug
+自动安装（推荐）
+运行以下命令下载 plug.vim 到 Vim 的自动加载目录：
+
+bash
+curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+
+
 
 -- 配置github换源
 git config --global url."https://githubfast.com/".insteadOf "https://github.com/"
