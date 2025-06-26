@@ -1,5 +1,6 @@
 
 set nonumber
+" set nu
 " set relativenumber
 " 设置 Tab 为 4 个空格
 
@@ -51,6 +52,10 @@ call plug#begin('~/.vim/plugged')
 	Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
     Plug 'voldikss/vim-floaterm'
+
+    Plug 'easymotion/vim-easymotion'
+
+    Plug 'tpope/vim-surround'
 call plug#end()
 " =======================
 " ===   plugins  end  ===
@@ -98,6 +103,17 @@ highlight SignColumn guibg=#000000 ctermbg=0
 highlight GruvboxRedSign guibg=#000000 ctermbg=0 
 highlight GruvboxBlueSign ctermbg=0 guibg=#000000 
 highlight pythonSpaceError ctermbg=0 guibg=#000000
+
+highlight GruvboxOrangeSign ctermbg=0 guibg=#000000
+""""""""""" easymotion """"""""""""""""""
+" <Leader>f{char} to move to {char}
+map  <Leader>f <Plug>(easymotion-bd-f)
+nmap <Leader>f <Plug>(easymotion-overwin-f)
+" s{char}{char} to move to {char}{char}
+nmap s <Plug>(easymotion-overwin-f2)
+" Move to word
+map  <Leader>s <Plug>(easymotion-bd-w)
+nmap <Leader>s <Plug>(easymotion-overwin-w)
 
 
 " -------------------------- coc.nvim ------------------
