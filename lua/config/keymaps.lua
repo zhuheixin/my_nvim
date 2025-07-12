@@ -27,16 +27,16 @@ api.nvim_set_keymap('n', 'L', '$', { noremap = true, silent = true })
 
 -- 定义通用的 pdb_run 命令
 api.nvim_create_user_command(
-  'Pdb',
-  function(opts)
-    local script = opts.args -- 获取用户输入的脚本名称
-    if script == "" then
-      print("Error: Please provide a script name, e.g., :PdbRun my_script.py")
-      return
-    end
-    vim.cmd("GdbStartPDB python -m pdb " .. script)
-  end,
-  { nargs = 1 } -- 必须提供一个参数
+    'Pdb',
+    function(opts)
+        local script = opts.args -- 获取用户输入的脚本名称
+        if script == "" then
+            print("Error: Please provide a script name, e.g., :PdbRun my_script.py")
+            return
+        end
+        vim.cmd("GdbStartPDB python -m pdb " .. script)
+    end,
+    { nargs = 1 } -- 必须提供一个参数
 )
 
 
